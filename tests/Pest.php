@@ -1,5 +1,5 @@
 <?php
 
-use HelgeSverre\ReceiptScanner\Tests\TestCase;
+use TheAi\ReceiptScanner\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

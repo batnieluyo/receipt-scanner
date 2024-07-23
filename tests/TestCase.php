@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Tests;
+namespace TheAi\ReceiptScanner\Tests;
 
 use Dotenv\Dotenv;
-use HelgeSverre\ReceiptScanner\ReceiptScannerServiceProvider;
+use TheAi\ReceiptScanner\ReceiptScannerServiceProvider;
 use OpenAI\Laravel\ServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 

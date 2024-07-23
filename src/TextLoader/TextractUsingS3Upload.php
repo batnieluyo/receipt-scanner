@@ -1,12 +1,12 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\TextLoader;
+namespace TheAi\ReceiptScanner\TextLoader;
 
 use Exception;
-use HelgeSverre\ReceiptScanner\Contracts\TextLoader;
-use HelgeSverre\ReceiptScanner\Services\Textract\Data\S3Object;
-use HelgeSverre\ReceiptScanner\Services\Textract\TextractService;
-use HelgeSverre\ReceiptScanner\TextContent;
+use TheAi\ReceiptScanner\Contracts\TextLoader;
+use TheAi\ReceiptScanner\Services\Textract\Data\S3Object;
+use TheAi\ReceiptScanner\Services\Textract\TextractService;
+use TheAi\ReceiptScanner\TextContent;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;

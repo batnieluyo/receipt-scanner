@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Data;
+namespace TheAi\ReceiptScanner\Data;
 
 class LineItem
 {

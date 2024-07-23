@@ -1,16 +1,16 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Facades;
+namespace TheAi\ReceiptScanner\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \HelgeSverre\ReceiptScanner\ReceiptScanner
+ * @see \TheAi\ReceiptScanner\ReceiptScanner
  */
 class ReceiptScanner extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \HelgeSverre\ReceiptScanner\ReceiptScanner::class;
+        return \TheAi\ReceiptScanner\ReceiptScanner::class;
     }
 }

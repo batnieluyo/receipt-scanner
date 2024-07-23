@@ -1,8 +1,8 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Facades;
+namespace TheAi\ReceiptScanner\Facades;
 
-use HelgeSverre\ReceiptScanner\TextLoaderFactory;
+use TheAi\ReceiptScanner\TextLoaderFactory;
 use Illuminate\Support\Facades\Facade;
 
 /**

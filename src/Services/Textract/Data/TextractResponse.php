@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Services\Textract\Data;
+namespace TheAi\ReceiptScanner\Services\Textract\Data;
 
 use Aws\Result;
 use Illuminate\Support\Arr;

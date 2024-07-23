@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner;
+namespace TheAi\ReceiptScanner;
 
 use Aws\Textract\TextractClient;
 use Spatie\LaravelPackageTools\Package;

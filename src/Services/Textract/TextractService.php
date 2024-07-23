@@ -1,11 +1,11 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Services\Textract;
+namespace TheAi\ReceiptScanner\Services\Textract;
 
 use Aws\Textract\TextractClient;
 use Exception;
-use HelgeSverre\ReceiptScanner\Services\Textract\Data\S3Object;
-use HelgeSverre\ReceiptScanner\Services\Textract\Data\TextractResponse;
+use TheAi\ReceiptScanner\Services\Textract\Data\S3Object;
+use TheAi\ReceiptScanner\Services\Textract\Data\TextractResponse;
 use Illuminate\Support\Arr;
 
 class TextractService

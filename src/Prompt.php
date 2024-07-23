@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner;
+namespace TheAi\ReceiptScanner;
 
 use Illuminate\Support\Facades\View;
 

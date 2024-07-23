@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\TextLoader;
+namespace TheAi\ReceiptScanner\TextLoader;
 
-use HelgeSverre\ReceiptScanner\Contracts\TextLoader;
-use HelgeSverre\ReceiptScanner\TextContent;
+use TheAi\ReceiptScanner\Contracts\TextLoader;
+use TheAi\ReceiptScanner\TextContent;
 use Smalot\PdfParser\Parser;
 
 class Pdf implements TextLoader

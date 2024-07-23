@@ -1,12 +1,12 @@
 {
-    "name": "helgesverre/receipt-scanner",
+    "name": "batnieluyo/receipt-scanner",
     "description": "Use OpenAI to extract structured receipt and invoice data from Text, Html, Images and PDFs.",
     "keywords": [
         "laravel-package",
         "receipt",
         "scanner"
     ],
-    "homepage": "https://github.com/helgesverre/receipt-scanner",
+    "homepage": "https://github.com/batnieluyo/receipt-scanner",
     "license": "MIT",
     "authors": [
         {
@@ -22,7 +22,7 @@
         "illuminate/contracts": "^10.0|^11.0",
         "jstewmc/rtf": "^0.5.2",
         "league/flysystem-aws-s3-v3": "^3.16",
-        "openai-php/laravel": "^v0.10.0",
+        "openai-php/laravel": "^0.10.1",
         "prinsfrank/standards": "^2.1",
         "smalot/pdfparser": "*",
         "spatie/laravel-package-tools": "^1.14.0",
@@ -38,12 +38,12 @@
     },
     "autoload": {
         "psr-4": {
-            "HelgeSverre\\ReceiptScanner\\": "src/"
+            "TheAi\\ReceiptScanner\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "HelgeSverre\\ReceiptScanner\\Tests\\": "tests/",
+            "TheAi\\ReceiptScanner\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/",
             "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
@@ -86,11 +86,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "HelgeSverre\\ReceiptScanner\\ReceiptScannerServiceProvider"
+                "TheAi\\ReceiptScanner\\ReceiptScannerServiceProvider"
             ],
             "aliases": {
-                "ReceiptScanner": "HelgeSverre\\ReceiptScanner\\Facades\\ReceiptScanner",
-                "Text": "HelgeSverre\\ReceiptScanner\\Facades\\Text"
+                "ReceiptScanner": "TheAi\\ReceiptScanner\\Facades\\ReceiptScanner",
+                "Text": "TheAi\\ReceiptScanner\\Facades\\Text"
             }
         }
     },

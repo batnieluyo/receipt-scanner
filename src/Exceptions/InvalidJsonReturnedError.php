@@ -1,6 +1,6 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Exceptions;
+namespace TheAi\ReceiptScanner\Exceptions;
 
 use Exception;
 

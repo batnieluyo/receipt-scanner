@@ -1,16 +1,16 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner;
+namespace TheAi\ReceiptScanner;
 
-use HelgeSverre\ReceiptScanner\Contracts\TextLoader;
-use HelgeSverre\ReceiptScanner\TextLoader\Html;
-use HelgeSverre\ReceiptScanner\TextLoader\Pdf;
-use HelgeSverre\ReceiptScanner\TextLoader\Rtf;
-use HelgeSverre\ReceiptScanner\TextLoader\Text;
-use HelgeSverre\ReceiptScanner\TextLoader\Textract;
-use HelgeSverre\ReceiptScanner\TextLoader\TextractUsingS3Upload;
-use HelgeSverre\ReceiptScanner\TextLoader\Web;
-use HelgeSverre\ReceiptScanner\TextLoader\Word;
+use TheAi\ReceiptScanner\Contracts\TextLoader;
+use TheAi\ReceiptScanner\TextLoader\Html;
+use TheAi\ReceiptScanner\TextLoader\Pdf;
+use TheAi\ReceiptScanner\TextLoader\Rtf;
+use TheAi\ReceiptScanner\TextLoader\Text;
+use TheAi\ReceiptScanner\TextLoader\Textract;
+use TheAi\ReceiptScanner\TextLoader\TextractUsingS3Upload;
+use TheAi\ReceiptScanner\TextLoader\Web;
+use TheAi\ReceiptScanner\TextLoader\Word;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\Traits\Macroable;
 use InvalidArgumentException;

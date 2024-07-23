@@ -1,8 +1,8 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\Contracts;
+namespace TheAi\ReceiptScanner\Contracts;
 
-use HelgeSverre\ReceiptScanner\TextContent;
+use TheAi\ReceiptScanner\TextContent;
 
 interface TextLoader
 {

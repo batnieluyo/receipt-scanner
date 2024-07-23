@@ -1,12 +1,12 @@
 <p align="center"><img src=".github/header.png"></p>
 
-> *Need more flexibility?* Try the [Extractor](https://github.com/HelgeSverre/extractor) package instead, a AI-Powered
+> *Need more flexibility?* Try the [Extractor](https://github.com/batnieluyo/extractor) package instead, a AI-Powered
 > data extraction library for Laravel
 
 # AI-Powered Receipt and Invoice Scanner for Laravel
 
-![Latest Version on Packagist](https://img.shields.io/packagist/v/helgesverre/receipt-scanner.svg?style=flat-square)
-![Total Downloads](https://img.shields.io/packagist/dt/helgesverre/receipt-scanner.svg?style=flat-square)
+![Latest Version on Packagist](https://img.shields.io/packagist/v/batnieluyo/receipt-scanner.svg?style=flat-square)
+![Total Downloads](https://img.shields.io/packagist/dt/batnieluyo/receipt-scanner.svg?style=flat-square)
 
 Easily extract structured receipt data from images, PDFs, and emails within your Laravel application using OpenAI.
 
@@ -23,7 +23,7 @@ Easily extract structured receipt data from images, PDFs, and emails within your
 Install the package via composer:
 
 ```bash
-composer require helgesverre/receipt-scanner
+composer require batnieluyo/receipt-scanner
 ```
 
 Publish the config file:
@@ -90,7 +90,7 @@ ReceiptScanner::scan($text);
 ### Extracting data from other formats
 
 ```php
-use HelgeSverre\ReceiptScanner\Facades\Text;
+use TheAi\ReceiptScanner\Facades\Text;
 
 $textPlainText = Text::text(file_get_contents('./receipt.txt'));
 $textPdf = Text::pdf(file_get_contents('./receipt.pdf'));
@@ -105,7 +105,7 @@ After loading, you can pass the `TextContent` or the plain text (which can be re
 the `ReceiptScanner::scan()` method.
 
 ```php
-use HelgeSverre\ReceiptScanner\Facades\ReceiptScanner;
+use TheAi\ReceiptScanner\Facades\ReceiptScanner;
 
 ReceiptScanner::scan($textPlainText)
 ReceiptScanner::scan($textPdf)
@@ -122,9 +122,9 @@ The scanned receipt is parsed into a DTO which consists of a main `Receipt` clas
 and a `Merchant` dto, representing the seller on the receipt or invoice, and an array of `LineItem` DTOs holding each
 individual line item.
 
-- `HelgeSverre\ReceiptScanner\Data\Receipt`
-- `HelgeSverre\ReceiptScanner\Data\Merchant`
-- `HelgeSverre\ReceiptScanner\Data\LineItem`
+- `TheAi\ReceiptScanner\Data\Receipt`
+- `TheAi\ReceiptScanner\Data\Merchant`
+- `TheAi\ReceiptScanner\Data\LineItem`
 
 The DTO has a `toArray()` method, which will result in a structure like this:
 
@@ -158,7 +158,7 @@ For flexibility, all fields are nullable.
 If you prefer to work with an array instead of the built-in DTO, you can specify `asArray: true` when calling `scan()`
 
 ```php
-use HelgeSverre\ReceiptScanner\Facades\ReceiptScanner;
+use TheAi\ReceiptScanner\Facades\ReceiptScanner;
 
 ReceiptScanner::scan(
     $textPlainText
@@ -172,8 +172,8 @@ To use a different model, you can specify the model name to use with the `model`
 the `scan()` method.
 
 ```php
-use HelgeSverre\ReceiptScanner\Facades\ReceiptScanner;
-use HelgeSverre\ReceiptScanner\ModelNames;
+use TheAi\ReceiptScanner\Facades\ReceiptScanner;
+use TheAi\ReceiptScanner\ModelNames;
 
 // With the ModelNames class
 ReceiptScanner::scan($content, model: ModelNames::GPT4_1106_PREVIEW)
@@ -193,7 +193,7 @@ string.
 
 This parameter specifies the OpenAI model used for the extraction process.
 
-`HelgeSverre\ReceiptScanner\ModelNames` is a class containing constants for each model, provided for convenience.
+`TheAi\ReceiptScanner\ModelNames` is a class containing constants for each model, provided for convenience.
 However, you can also directly
 use a string to specify the model if you prefer.
 
@@ -249,7 +249,7 @@ DTO to have more/less fields or want to convert the response into your own DTO, 
 ### Example Usage:
 
 ```php
-use HelgeSverre\ReceiptScanner\Facades\ReceiptScanner;
+use TheAi\ReceiptScanner\Facades\ReceiptScanner;
 
 $parsedReceipt = ReceiptScanner::scan(
     text: $textInput,
@@ -361,7 +361,7 @@ OUTPUT IN JSON
 ```
 
 ```php
-use HelgeSverre\ReceiptScanner\Facades\ReceiptScanner;
+use TheAi\ReceiptScanner\Facades\ReceiptScanner;
 
 $receipt = ReceiptScanner::scan(
     text: "Your invoice here",

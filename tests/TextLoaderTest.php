@@ -1,7 +1,7 @@
 <?php
 
-use HelgeSverre\ReceiptScanner\Facades\Text;
-use HelgeSverre\ReceiptScanner\TextContent;
+use TheAi\ReceiptScanner\Facades\Text;
+use TheAi\ReceiptScanner\TextContent;
 
 it('Can load Text', function () {
     $text = Text::text(file_get_contents(__DIR__.'/samples/wolt-pizza-norwegian.txt'));

@@ -1,9 +1,9 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner;
+namespace TheAi\ReceiptScanner;
 
-use HelgeSverre\ReceiptScanner\Data\Receipt;
-use HelgeSverre\ReceiptScanner\Exceptions\InvalidJsonReturnedError;
+use TheAi\ReceiptScanner\Data\Receipt;
+use TheAi\ReceiptScanner\Exceptions\InvalidJsonReturnedError;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use OpenAI\Laravel\Facades\OpenAI;

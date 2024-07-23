@@ -1,10 +1,10 @@
 <?php
 
-namespace HelgeSverre\ReceiptScanner\TextLoader;
+namespace TheAi\ReceiptScanner\TextLoader;
 
-use HelgeSverre\ReceiptScanner\Contracts\TextLoader;
-use HelgeSverre\ReceiptScanner\Services\Textract\TextractService;
-use HelgeSverre\ReceiptScanner\TextContent;
+use TheAi\ReceiptScanner\Contracts\TextLoader;
+use TheAi\ReceiptScanner\Services\Textract\TextractService;
+use TheAi\ReceiptScanner\TextContent;
 
 /**
  * Takes the input and sends it directly to Textract, meant for images, does not work for PDFs or very large files,

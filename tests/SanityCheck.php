@@ -1,12 +1,12 @@
 <?php
 
-use HelgeSverre\ReceiptScanner\Data\Receipt;
-use HelgeSverre\ReceiptScanner\Facades\ReceiptScanner;
-use HelgeSverre\ReceiptScanner\ModelNames;
-use HelgeSverre\ReceiptScanner\Prompt;
-use HelgeSverre\ReceiptScanner\TextContent;
-use HelgeSverre\ReceiptScanner\TextLoader\Textract;
-use HelgeSverre\ReceiptScanner\TextLoader\TextractUsingS3Upload;
+use TheAi\ReceiptScanner\Data\Receipt;
+use TheAi\ReceiptScanner\Facades\ReceiptScanner;
+use TheAi\ReceiptScanner\ModelNames;
+use TheAi\ReceiptScanner\Prompt;
+use TheAi\ReceiptScanner\TextContent;
+use TheAi\ReceiptScanner\TextLoader\Textract;
+use TheAi\ReceiptScanner\TextLoader\TextractUsingS3Upload;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
